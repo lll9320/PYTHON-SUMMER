@@ -1,0 +1,12 @@
+start = input('開始尋找兩數最大公因數(請按enter)')
+x= int(input('第一個數:'))
+y= int(input('第二個數:'))
+for i in range(x,0,-1):
+  if x%i==0:
+    if y%i == 0:
+      print(i)
+      break
+    else:
+      continue
+  else:
+    continue
